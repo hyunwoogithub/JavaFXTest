@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.helloworld.Controller">
+   <children>
+      <Button fx:id="btn_click" layoutX="200.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleAction" prefHeight="39.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-width: 10px; -fx-border-color: black; -fx-border-style: solid;" text="Today's Song" textFill="#ffadad" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btn_top10" layoutX="395.0" layoutY="20.0" mnemonicParsing="false" onAction="#showtop10" prefHeight="39.0" prefWidth="183.0" style="-fx-background-color: white; -fx-border-width: 10px; -fx-border-color: black; -fx-border-style: solid;" text="TOP10" textFill="#e83636" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="lbl_top10" layoutX="32.0" layoutY="91.0" prefHeight="269.0" prefWidth="539.0" style="-fx-border-color: black; -fx-background-color: white; -fx-background-radius: 20; -fx-border-style: solid; -fx-border-radius: 10; -fx-border-width: 10;">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="lbl_hello" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="228.0" prefHeight="39.0" prefWidth="600.0" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="jenre" layoutX="31.0" layoutY="25.0" prefHeight="50.0" prefWidth="150.0" promptText="jenre" visibleRowCount="20">
+         <items>
+           <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Acustic" />
+               <String fx:value="AlternativePOP" />
+               <String fx:value="Oldies" />
+               <String fx:value="ModernRock" />
+              <String fx:value="HeavyMetal" />
+              <String fx:value="HardRock" />
+              <String fx:value="ModernRock" />
+              <String fx:value="Progressive/ArtRock" />
+              <String fx:value="ClubMusic" />
+              <String fx:value="House" />
+              <String fx:value="PopRap" />
+              <String fx:value="Gangstar/HardcoreRap" />
+              <String fx:value="East-West" />
+              <String fx:value="Urban" />
+              <String fx:value="CrossOver" />
+              <String fx:value="Acid/PopJazz" />
+              <String fx:value="VocalJazz" />
+              <String fx:value="BossaNova" />
+              <String fx:value="渋谷系" />
+              <String fx:value="Chanson" />
+              <String fx:value="canzone" />
+           </FXCollections>
+         </items>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <Button fx:id="btn_top10" layoutX="272.0" layoutY="366.0" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: white; -fx-border-width: 2px; -fx-border-color: black; -fx-border-style: solid;" text="save" textFill="#940a0a" underline="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</Pane>
